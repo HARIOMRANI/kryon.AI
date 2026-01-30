@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --background-rgb: 0, 0, 0; }
+body { color: white; background: black; overflow: hidden; }
+
+/* 🌌 Cyber Background */
+.cyber-bg {
+  position: absolute; inset: 0; z-index: -1;
+  background-image: linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(circle at center, black, transparent 90%);
+}
+
+/* 🪟 Glass Effect */
+.glass {
+  background: rgba(10, 10, 10, 0.6); backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* 👑 Owner Gold Glow */
+.gold-glow {
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.15);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+}
+
