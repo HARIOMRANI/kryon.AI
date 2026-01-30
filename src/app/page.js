@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
-import { auth, googleProvider } from "@/lib/firebase";
+import { auth, googleProvider } from "../lib/firebase";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { Send, Paperclip, Zap, LogOut, BrainCircuit, Loader2 } from "lucide-react";
 
